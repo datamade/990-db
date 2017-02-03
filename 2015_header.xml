@@ -1,0 +1,4 @@
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:efile="http://www.irs.gov/efile">
+  <xsl:output omit-xml-declaration="yes" indent="yes"/>
+  <xsl:template match="/">'<xsl:value-of select="//efile:Filer/efile:EIN" />','<xsl:value-of select="//efile:Filer/efile:BusinessName/efile:BusinessNameLine1" />','<xsl:value-of select="//efile:Filer/efile:BusinessNameControlTxt" />','<xsl:value-of select="//efile:Filer/efile:PhoneNum" />','<xsl:value-of select="//efile:Filer/efile:USAddress/efile:AddressLine1" />','<xsl:value-of select="//efile:Filer/efile:USAddress/efile:City" />','<xsl:value-of select="//efile:Filer/efile:USAddress/efile:State" />','<xsl:value-of select="//efile:Filer/efile:USAddress/efile:ZIPCode" />'</xsl:template>
+</xsl:stylesheet>
